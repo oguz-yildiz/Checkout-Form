@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Checkout</h1>
+      </header>
+
+      <div class="main">
+        <!-- FORM  -->
+        <form action="result.html" method="get">
+          <div class="form_top">
+            <h3>Contact indormation</h3>
+            <div>
+              <label for="mail">Email</label>
+              <div class="inborder">
+                <i class="fa-solid fa-envelope"></i>
+
+                <input
+                  type="email"
+                  name="email"
+                  id="mail"
+                  placeholder="Enter your email..."
+                />
+              </div>
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <div class="inborder">
+                <i class="fa-solid fa-phone"></i>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Enter your phone..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form_bottom">
+            <h3>Shipping address</h3>
+            <div>
+              <label for="name">Full name</label>
+              <div class="inborder">
+                <i class="fa-solid fa-user"></i>
+                <input
+                  type="text"
+                  name="full name"
+                  id="name"
+                  placeholder="Enter your Full name..."
+                />
+              </div>
+            </div>
+            <div>
+              <label for="address">Address</label>
+              <div class="inborder">
+                <i class="fa-solid fa-house-chimney"></i>
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="Enter your address..."
+                />
+              </div>
+            </div>
+            <div>
+              <label for="city">City</label>
+              <div class="inborder">
+                <i class="fa-solid fa-city"></i>
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  placeholder="Enter your city..."
+                />
+              </div>
+            </div>
+
+            <div class="form_end1">
+              <div>
+                <label for="dropdown">Country</label>
+                <div class="inborder1">
+                  <i class="fa-solid fa-earth-europe"></i>
+                  <select name="country" id="dropdown">
+                    <option value="">Turkey</option>
+                    <option value="">France</option>
+                    <option value="">Germany</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label class="postcode" for="postcode">Post Code</label>
+                <div class="inborder2">
+                  <i class="fa-solid fa-envelopes-bulk"></i>
+                  <input
+                    type="number"
+                    name="postcode"
+                    id="postcode"
+                    placeholder="Enter your post code..."
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form_end2">
+              <div>
+                <input
+                  class="check_button"
+                  type="checkbox"
+                  name="confirmation"
+                  id="checkbox"
+                />
+              </div>
+
+              <div>
+                <label for="checkbox">See this information next time</label>
+              </div>
+            </div>
+            <div class="button">
+              <input class="submit_button" type="submit" value="Continue" />
+            </div>
+          </div>
+        </form>
+        <!-- shopping basket  -->
+        <section class="grey_area">
+          <div class="grey-1">
+            <img src="./IMG/photo1.png" alt="img-1" />
+            <!-- <div class="img1"></div> -->
+            <div class="price-1">
+              <h4>Vintage Backbag</h4>
+              <p>
+                <span class="orange">$54.99</span
+                ><span class="line">$94.99</span>
+              </p>
+              <div class="count_box">
+                <div class="eksi">-</div>
+                <div class="count">1</div>
+                <div class="artı">+</div>
+              </div>
+            </div>
+          </div>
+          <div class="grey-2">
+            <img src="./IMG/photo2.png" alt="img-2" />
+            <div class="price-2">
+              <h4>Vintage Backbag</h4>
+              <p>
+                <span class="orange">$74.99</span
+                ><span class="line">$124.99</span>
+              </p>
+              <div class="count_box">
+                <div class="eksi">-</div>
+                <div class="count">
+                  <p>1</p>
+                </div>
+                <div class="artı">+</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="shipping">
+              <p>Shipping</p>
+              <p class="money">$19</p>
+            </div>
+            <div class="total">
+              <p>Total</p>
+              <p class="money">$148.98</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
