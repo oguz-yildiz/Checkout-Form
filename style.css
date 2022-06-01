@@ -15,17 +15,169 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .main {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
   height: 85vh;
 }
 
-.form {
+/* form  */
+.form_top h3,
+.form_bottom h3 {
+  font-weight: 550;
+  font-size: 1.1rem;
+  padding-bottom: 0.4rem;
+}
+
+.form .inborder {
+  border: solid rgb(136, 134, 134) 0.5px;
+  padding: 0.4rem;
+  width: 25rem;
+  border-radius: 0.3rem;
+}
+.fa-solid {
+  color: rgb(136, 134, 134);
+}
+
+label {
+  font-size: 0.8rem;
+  display: block;
+  padding: 0.6rem 0;
+}
+
+input {
+  font-size: 0.9rem;
+  border: none;
+  padding-left: 0.3rem;
+}
+
+.form_bottom {
+  margin-top: 2rem;
+}
+.form_end1 {
+  display: flex;
+  margin-top: 0.7rem;
+}
+.postcode {
+  margin-left: 0.6rem;
+}
+.form_end2 {
+  display: flex;
+  align-items: center;
+  margin-top: 0.7rem;
+}
+.check_button {
+  margin-right: 1rem;
+}
+
+.inborder1 {
+  border: solid rgb(136, 134, 134) 0.5px;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+}
+.inborder1 select {
+  border: none;
+}
+.inborder2 {
+  border: solid rgb(136, 134, 134) 0.5px;
+  width: 17.3rem;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  margin-left: 0.7rem;
+}
+
+.button {
+  text-align: right;
+}
+
+.submit_button {
+  padding: 0.7rem 0.5rem;
+  background-color: #f2994a;
+  border-radius: 0.3rem;
+  color: white;
+}
+
+/* shoping basket  */
+.grey_area {
+  background-color: rgb(224, 219, 219);
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 25vw;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grey-1,
+.grey-2 {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+img {
+  width: 100px;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+}
+
+h4 {
+  font-weight: 550;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.orange {
+  color: #f2994a;
+  font-weight: 600;
+}
+.line {
+  margin-left: 0.2rem;
+  font-size: 0.75rem;
+  text-decoration: line-through;
+}
+.eksi,
+.artı {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: rgb(189, 188, 188);
+  border-radius: 0.3rem;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.count {
+  font-size: 0.8rem;
+}
+
+.price-1,
+.price-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.count_box {
+  display: flex;
   border: 1px solid;
-  width: 500px;
+  border-radius: 0.3rem;
+  width: 6.5rem;
+  padding: 0.2rem 0.6rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.grey_area-bottom {
+  margin-top: 3rem;
+}
+
+.shipping,
+.total {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  font-size: large;
 }
